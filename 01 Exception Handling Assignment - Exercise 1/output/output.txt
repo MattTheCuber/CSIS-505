@@ -1,0 +1,11 @@
+Building
+  Monthly electric bill: 150.0
+  Monthly water bill: 25.0
+  Carbon footprint: 3131265.0436953804
+Car
+  Miles driven per year: 5200.0
+  Miles per gallon: 20.0
+  Carbon footprint: 5153.2
+Bicycle
+  Miles traveled per month: 520.0
+  Carbon footprint: 468.0
