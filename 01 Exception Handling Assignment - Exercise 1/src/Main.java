@@ -16,9 +16,9 @@ public class Main {
      */
     public static void main(String[] args) {
         // Create objects of each class
-        Building building = new Building(150, 25);
-        Car car = new Car(5200, 20);
-        Bicycle bicycle = new Bicycle(520);
+        Building building = new Building(375, 175);
+        Car car = new Car(9500, 19);
+        Bicycle bicycle = new Bicycle(250);
 
         // Place references of these objects in an array of CarbonFootprint
         CarbonFootprint[] carbonFootprints = new CarbonFootprint[] { building, car, bicycle };

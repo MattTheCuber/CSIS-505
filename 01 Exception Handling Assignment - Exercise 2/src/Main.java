@@ -17,19 +17,19 @@ public class Main {
         // Regular values
         System.out.println("Success tests:");
         try {
-            new Building(150, 25);
+            new Building(375, 175);
             System.out.println("Created building successfully.");
         } catch (IllegalArgumentException e) {
             System.err.println(e.toString());
         }
         try {
-            new Car(5200, 20);
+            new Car(9500, 19);
             System.out.println("Created car successfully.");
         } catch (IllegalArgumentException e) {
             System.err.println(e.toString());
         }
         try {
-            new Bicycle(520);
+            new Bicycle(250);
             System.out.println("Created bicycle successfully.");
         } catch (IllegalArgumentException e) {
             System.err.println(e.toString());
