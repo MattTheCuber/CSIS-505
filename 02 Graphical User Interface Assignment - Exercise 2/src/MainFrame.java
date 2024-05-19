@@ -1,31 +1,22 @@
 import javax.swing.BorderFactory;
 import javax.swing.Box;
-import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.Font;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
-import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+
 import java.util.Date;
 import java.util.Locale;
 import java.util.regex.Matcher;
@@ -78,7 +69,7 @@ public class MainFrame extends JFrame {
 
         setTitle("02 Graphical User Interface Assignment - Exercise 2");
         setSize(380, 150);
-        // setMinimumSize(new Dimension(300, 400));
+        setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
@@ -101,7 +92,7 @@ public class MainFrame extends JFrame {
             } catch (ParseException e) {
                 JOptionPane.showMessageDialog(
                         this,
-                        "An invalid date format was specified. Please try again.",
+                        "Error parsing provided date. Please try again.",
                         "Error",
                         JOptionPane.ERROR_MESSAGE);
                 return;
