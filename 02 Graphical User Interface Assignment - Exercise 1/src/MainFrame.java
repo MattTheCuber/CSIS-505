@@ -83,15 +83,15 @@ public class MainFrame extends JFrame {
         clearButton = new JButton("Clear");
         clearButton.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-                clearButtonClicked(e);
+            public void actionPerformed(ActionEvent evt) {
+                clearButtonClicked(evt);
             }
         });
         verifyButton = new JButton("Verify");
         verifyButton.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-                verifyButtonClicked(e);
+            public void actionPerformed(ActionEvent evt) {
+                verifyButtonClicked(evt);
             }
         });
 
@@ -121,11 +121,11 @@ public class MainFrame extends JFrame {
         setVisible(true);
     }
 
-    public void clearButtonClicked(ActionEvent e) {
+    public void clearButtonClicked(ActionEvent evt) {
         textArea.setText("");
     }
 
-    public void verifyButtonClicked(ActionEvent e) {
+    public void verifyButtonClicked(ActionEvent evt) {
         String emailMessage = textArea.getText();
         int spamScore = 0;
         for (String keyPhrase : spamKeyPhrases) {
