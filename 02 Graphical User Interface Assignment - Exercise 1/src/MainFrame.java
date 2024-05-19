@@ -1,4 +1,4 @@
-// Graphical User Interface Assignment - Exercise 2
+// Graphical User Interface Assignment - Exercise 1
 // Matthew Vine
 // CSIS 505-B01 (Liberty University)
 // May 24, 2024
