@@ -31,7 +31,7 @@ public class Main {
             if (obj instanceof Building) {
                 Building b = (Building) obj;
                 System.out.println("  Monthly electric bill: " + b.getMonthlyElectricBill());
-                System.out.println("  Monthly water bill: " + b.getMonthlyWaterBill());
+                System.out.println("  Monthly gas bill: " + b.getMonthlyGasBill());
             } else if (obj instanceof Car) {
                 Car c = (Car) obj;
                 System.out.println("  Miles driven per year: " + c.getMilesDrivenPerYear());

@@ -4,8 +4,8 @@ Created car successfully.
 Created bicycle successfully.
 
 Fail tests:
-InvalidFootprintException: Electric and water bills must be non-negative.
+InvalidFootprintException: Electric and gas bills must be non-negative.
 InvalidFootprintException: Miles driven per year and miles per gallon must be non-negative.
 InvalidFootprintException: Miles traveled per month must be non-negative.
 
-Program ending without crash.
+Program ending without crash...

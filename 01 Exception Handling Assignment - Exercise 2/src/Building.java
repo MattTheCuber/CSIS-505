@@ -9,22 +9,22 @@
  */
 public class Building implements CarbonFootprint {
     private double monthlyElectricBill;
-    private double monthlyWaterBill;
+    private double monthlyGasBill;
 
     /**
-     * Constructs a Building object with the specified monthly electric and water
+     * Constructs a Building object with the specified monthly electric and gas
      * bills.
      * 
      * @param monthlyElectricBill The monthly electric bill.
-     * @param monthlyWaterBill    The monthly water bill.
+     * @param monthlyGasBill      The monthly gas bill.
      */
-    public Building(double monthlyElectricBill, double monthlyWaterBill) throws InvalidFootprintException {
-        if (monthlyElectricBill < 0 || monthlyWaterBill < 0) {
-            throw new InvalidFootprintException("Electric and water bills must be non-negative.");
+    public Building(double monthlyElectricBill, double monthlyGasBill) throws InvalidFootprintException {
+        if (monthlyElectricBill < 0 || monthlyGasBill < 0) {
+            throw new InvalidFootprintException("Electric and gas bills must be non-negative.");
         }
 
         this.monthlyElectricBill = monthlyElectricBill;
-        this.monthlyWaterBill = monthlyWaterBill;
+        this.monthlyGasBill = monthlyGasBill;
     }
 
     /**
@@ -46,21 +46,21 @@ public class Building implements CarbonFootprint {
     }
 
     /**
-     * Gets the monthly water bill.
+     * Gets the monthly gas bill.
      * 
-     * @return The monthly water bill.
+     * @return The monthly gas bill.
      */
-    public double getMonthlyWaterBill() {
-        return monthlyWaterBill;
+    public double getMonthlyGasBill() {
+        return monthlyGasBill;
     }
 
     /**
-     * Sets the monthly water bill.
+     * Sets the monthly gas bill.
      * 
-     * @param monthlyWaterBill The monthly water bill.
+     * @param monthlyGasBill The monthly gas bill.
      */
-    public void setMonthlyWaterBill(double monthlyWaterBill) {
-        this.monthlyWaterBill = monthlyWaterBill;
+    public void setMonthlyGasBill(double monthlyGasBill) {
+        this.monthlyGasBill = monthlyGasBill;
     }
 
     /**
@@ -71,6 +71,6 @@ public class Building implements CarbonFootprint {
     @Override
     public double getCarbonFootprint() {
         // Equation obtained directly from the assignment instructions
-        return ((monthlyElectricBill / 10.68) * 119.58 * 12) + ((monthlyWaterBill / 0.1188) * 1232 * 12);
+        return ((monthlyElectricBill / 10.68) * 119.58 * 12) + ((monthlyGasBill / 0.1188) * 1232 * 12);
     }
 }
