@@ -89,6 +89,8 @@ public class MainFrame extends JFrame {
         titleLabel.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0)); // Add padding
         textAreaLabel = new JLabel("Type or paste email text below:");
         textArea = new JTextArea();
+        textArea.setLineWrap(true);
+        textArea.setWrapStyleWord(true);
         scrollPane = new JScrollPane(textArea);
         clearButton = new JButton("Clear");
         // Add an action listener to the clear button
