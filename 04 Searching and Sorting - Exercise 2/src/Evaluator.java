@@ -127,7 +127,7 @@ public class Evaluator {
         // Create a SecureRandom object.
         SecureRandom generator = new SecureRandom();
         // Generate an array of random integers from 1 to the arraySize.
-        return generator.ints(arraySize, 1, arraySize).toArray();
+        return generator.ints(arraySize, 1, arraySize + 1).toArray();
     }
 
     /**
@@ -230,8 +230,8 @@ public class Evaluator {
 
         int leftIndex = left; // index into left subarray
         int rightIndex = middle2; // index into right subarray
-        int combinedIndex = left; // index into temporary working array
-        int[] combined = new int[data.length]; // working array
+        int combinedIndex = 0; // index into temporary working array
+        int[] combined = new int[right - left + 1]; // working array sized to the number of elements being merged
 
         // merge arrays until reaching end of either
         while (leftIndex <= middle1 && rightIndex <= right) {
@@ -258,8 +258,8 @@ public class Evaluator {
         }
 
         // copy values back into original array
-        for (int i = left; i <= right; i++) {
-            data[i] = combined[i];
+        for (int i = 0; i < combined.length; i++) {
+            data[left + i] = combined[i];
         }
     }
 }
