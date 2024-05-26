@@ -1,7 +1,7 @@
-// Generic Collections Assignment - Exercise 2
+// Searching and Sorting - Exercise 1
 // Matthew Vine
 // CSIS 505-B01 (Liberty University)
-// May 31, 2024
+// June 7, 2024
 
 // Fig. 19.3: BinarySearchTest.java
 // Use binary search to locate an item in an array.
