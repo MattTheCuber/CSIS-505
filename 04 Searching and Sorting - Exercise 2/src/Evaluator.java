@@ -1,70 +1,145 @@
+// Searching and Sorting - Exercise 2
+// Matthew Vine
+// CSIS 505-B01 (Liberty University)
+// June 7, 2024
+
 import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.function.Consumer;
 
+/**
+ * Evaluator class to evaluate the performance of selection sort, insertion
+ * sort, and merge sort.
+ * 
+ */
 public class Evaluator {
+    // Size of the arrays for sorting
     private static int arraySize = 100000;
 
+    /**
+     * Main method to evaluate the performance of selection sort, insertion sort,
+     * and merge sort.
+     * 
+     * @param args Unused command-line arguments.
+     */
     public static void main(String[] args) {
         System.out.printf("Results for sorting %d elements in an array.%n%n", arraySize);
 
+        // Print the header for the table
         System.out.printf("| %-14s | %-15s | %-12s | %-15s |%n",
                 "Sort Method", "Sequential (ms)", "Random (ms)", "Descending (ms)");
         System.out.printf("|----------------|-----------------|--------------|-----------------|%n");
+        // Run the selection sort and print the results
         double[] selectionSortResults = timeSortMethod(Evaluator::selectionSort); // O(n^2)
         System.out.printf("| %-14s | %-15.4f | %-12.4f | %-15.4f |%n",
                 "Selection Sort", selectionSortResults[0], selectionSortResults[1], selectionSortResults[2]);
+        // Run the insertion sort and print the results
         double[] insertionSortResults = timeSortMethod(Evaluator::insertionSort); // O(n^2)
         System.out.printf("| %-14s | %-15.4f | %-12.4f | %-15.4f |%n",
                 "Insertion Sort", insertionSortResults[0], insertionSortResults[1], insertionSortResults[2]);
+        // Run the merge sort and print the results
         double[] mergeSortResults = timeSortMethod(Evaluator::mergeSort); // O(n log n)
         System.out.printf("| %-14s | %-15.4f | %-12.4f | %-15.4f |%n",
                 "Merge Sort", mergeSortResults[0], mergeSortResults[1], mergeSortResults[2]);
 
+        // Print the header for the statistics table
         System.out.printf("\n| %-14s | %-15s | %-12s | %-15s |%n",
                 "Sort Method", "Best (ms)", "Average (ms)", "Worst (ms)");
         System.out.printf("|----------------|-----------------|--------------|-----------------|%n");
+        // Print the statistics for the sort methods
         printStatistics("Selection Sort", selectionSortResults);
         printStatistics("Insertion Sort", insertionSortResults);
         printStatistics("Merge Sort", mergeSortResults);
     }
 
+    /**
+     * Print the statistics for a sort method.
+     * 
+     * @param sortMethod The name of the sort method.
+     * @param results    The results of the sort method as an array of three
+     *                   doubles.
+     */
     private static void printStatistics(String sortMethod, double[] results) {
+        // Calculate the best, worst, and average times for the sort method.
         double bestTime = Arrays.stream(results).min().getAsDouble();
         double worstTime = Arrays.stream(results).max().getAsDouble();
         double averageTime = Arrays.stream(results).average().getAsDouble();
+        // Print the statistics for the sort method.
         System.out.printf("| %-14s | %-15.4f | %-12.4f | %-15.4f |%n", sortMethod, bestTime, averageTime, worstTime);
     }
 
+    /**
+     * Time the sort method for three different types of arrays: sequential, random,
+     * and descending sequential.
+     * 
+     * @param sortMethod The sort method reference to time.
+     * @return An array of three doubles representing the time in milliseconds for a
+     *         sequential, random, and descending sequential array.
+     */
     private static double[] timeSortMethod(Consumer<int[]> sortMethod) {
+        // Time the sort method for three different types of arrays.
         double mergeSequentialTime = timeSingleSort(sortMethod, createSequential());
         double mergeRandomTime = timeSingleSort(sortMethod, createRandom());
         double mergeSequentialDescendingTime = timeSingleSort(sortMethod, createDescending());
+        // Return an array of double for the times in milliseconds.
         return new double[] { mergeSequentialTime, mergeRandomTime, mergeSequentialDescendingTime };
     }
 
+    /**
+     * Time a single sort method for a single type of array.
+     * 
+     * @param sortMethod The sort method reference to time.
+     * @param data       The array to sort.
+     * @return The time in milliseconds to sort the array.
+     */
     private static double timeSingleSort(Consumer<int[]> sortMethod, int[] data) {
+        // Start the timer.
         long startTime = System.nanoTime();
+        // Run the sort method.
         sortMethod.accept(data);
+        // End the timer.
         long endTime = System.nanoTime();
+        // Return the time in milliseconds.
         return (endTime - startTime) / 1000000.0;
     }
 
+    /**
+     * Create an array of integers in sequential order from 1 to the arraySize.
+     * 
+     * @return An array of integers in sequential order.
+     */
     private static int[] createSequential() {
+        // Initialize the array with the size of the array.
         int[] data = new int[arraySize];
+        // Fill the array with integers from 1 to the arraySize.
         for (int i = 0; i < arraySize; i++) {
             data[i] = i + 1;
         }
         return data;
     }
 
+    /**
+     * Create an array of random integers from 1 to the arraySize.
+     * 
+     * @return An array of random integers.
+     */
     private static int[] createRandom() {
+        // Create a SecureRandom object.
         SecureRandom generator = new SecureRandom();
+        // Generate an array of random integers from 1 to the arraySize.
         return generator.ints(arraySize, 1, arraySize).toArray();
     }
 
+    /**
+     * Create an array of integers in sequential descending order from the arraySize
+     * to 1.
+     * 
+     * @return An array of integers in sequential descending order.
+     */
     private static int[] createDescending() {
+        // Initialize the array with the size of the array.
         int[] data = new int[arraySize];
+        // Fill the array with integers from the arraySize to 1.
         for (int i = 0; i < arraySize; i++) {
             data[i] = arraySize - i;
         }
