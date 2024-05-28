@@ -19,16 +19,16 @@ public class Main {
     public static void main(String[] args) {
         // Create an array of Invoice objects.
         Invoice[] invoices = {
-                new Invoice(1000, "Palm Sander", 5, 159.99),
-                new Invoice(1001, "Circular Saw", 15, 219.99),
-                new Invoice(1002, "Sledge Hammer", 10, 45.99),
-                new Invoice(1003, "Hammer", 70, 24.99),
-                new Invoice(1004, "Finn Tool", 5, 119.99),
-                new Invoice(1005, "Screwdriver", 40, 9.99),
-                new Invoice(1006, "Jig Saw", 20, 119.99),
-                new Invoice(1007, "Hacksaw", 40, 119.99),
-                new Invoice(1008, "Drill", 30, 179.99),
-                new Invoice(1009, "Impact Drill", 2, 199.99)
+                new Invoice(27, "1998 Jeep Wrangler headlight", 2, 30.0),
+                new Invoice(28, "2010 Ford Ranger Tie Rod End", 4, 49.99),
+                new Invoice(29, "2015 Toyota Camry brake pads", 4, 54.99),
+                new Invoice(30, "2001 Honda Civic air filter", 3, 12.99),
+                new Invoice(31, "2005 Chevrolet Silverado 1500 fuel pump", 1, 289.99),
+                new Invoice(32, "2012 Dodge Ram 1500 radiator", 2, 199.99),
+                new Invoice(33, "2008 Ford F-150 spark plugs", 8, 4.99),
+                new Invoice(34, "2019 Toyota Corolla oil filter", 10, 8.99),
+                new Invoice(35, "2003 Honda Accord alternator", 3, 149.99),
+                new Invoice(36, "2017 Chevrolet Malibu battery", 2, 129.99),
         };
         // Convert the array to a list.
         List<Invoice> invoicesList = Arrays.asList(invoices);
