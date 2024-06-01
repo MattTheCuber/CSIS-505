@@ -1,5 +1,19 @@
+// Generic Methods and Classes - Exercise 1
+// Matthew Vine
+// CSIS 505-B01 (Liberty University)
+// June 14, 2024
+
+/**
+ * Main class to demonstrate object comparisons using a generic method.
+ */
 public class Main {
+    /**
+     * Main method to demonstrate object comparisons using a generic method.
+     * 
+     * @param args Unused command-line arguments.
+     */
     public static void main(String[] args) {
+        // Create objects of various types to compare
         Boolean b1 = true;
         Boolean b2 = true;
         Boolean b3 = false;
@@ -24,6 +38,7 @@ public class Main {
         Object o1 = new Object();
         Object o2 = new Object();
 
+        // Compare the objects and print the results
         System.out.println("Comparing Boolean to itself: " + compareVine(b1, b1));
         System.out.println("Comparing equal Booleans: " + compareVine(b1, b2));
         System.out.println("Comparing different Booleans: " + compareVine(b1, b3));
@@ -61,13 +76,23 @@ public class Main {
         System.out.println("Comparing String with Object: " + compareVine(s1, o1));
     }
 
+    /**
+     * Compares two objects.
+     * 
+     * @param a   The first object to compare.
+     * @param b   The second object to compare.
+     * @param <T> The type of the objects to compare.
+     * @return True if the objects are equal, false otherwise.
+     */
     public static <T> boolean compareVine(T a, T b) {
-        if (a == null && b == null) {
+        // This block catches null values so that the equals method does not throw a
+        // runtime error.
+        if (a == null && b == null) { // If the objects are both null, they are equal.
             return true;
-        }
-        if (a == null || b == null) {
+        } else if (a == null || b == null) { // Else, if one object is null and the other is not, they are not equal.
             return false;
         }
+        // Compare the objects using the equals method.
         return a.equals(b);
     }
 }

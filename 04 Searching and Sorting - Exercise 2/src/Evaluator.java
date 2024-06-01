@@ -10,7 +10,6 @@ import java.util.function.Consumer;
 /**
  * Evaluator class to evaluate the performance of selection sort, insertion
  * sort, and merge sort.
- * 
  */
 public class Evaluator {
     // Size of the arrays for sorting
