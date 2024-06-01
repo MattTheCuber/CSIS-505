@@ -1,0 +1,14 @@
+{
+  "java.project.sourcePaths": [
+    "01 Exception Handling - Exercise 1\\src",
+    "03 Generic Collections - Exercise 1\\src",
+    "03 Generic Collections - Exercise 2\\src",
+    "04 Searching and Sorting - Exercise 2\\src",
+    "05 Generic Methods and Classes - Exercise 1\\src",
+    "05 Generic Methods and Classes - Exercise 2\\src",
+    "misc"
+  ],
+  "java.project.referencedLibraries": [
+    "C:\\Program Files\\Java\\jdk-22\\db\\lib\\derbyclient.jar"
+  ]
+}
