@@ -1,0 +1,54 @@
+Invoices sorted by description:
+Part Number: 27      Quantity: 2      Price: $30.00      Part Description: 1998 Jeep Wrangler headlight
+Part Number: 30      Quantity: 3      Price: $12.99      Part Description: 2001 Honda Civic air filter
+Part Number: 35      Quantity: 3      Price: $149.99     Part Description: 2003 Honda Accord alternator
+Part Number: 31      Quantity: 1      Price: $289.99     Part Description: 2005 Chevrolet Silverado 1500 fuel pump
+Part Number: 33      Quantity: 8      Price: $4.99       Part Description: 2008 Ford F-150 spark plugs
+Part Number: 28      Quantity: 4      Price: $49.99      Part Description: 2010 Ford Ranger Tie Rod End
+Part Number: 32      Quantity: 2      Price: $199.99     Part Description: 2012 Dodge Ram 1500 radiator
+Part Number: 29      Quantity: 4      Price: $54.99      Part Description: 2015 Toyota Camry brake pads
+Part Number: 36      Quantity: 2      Price: $129.99     Part Description: 2017 Chevrolet Malibu battery
+Part Number: 34      Quantity: 10     Price: $8.99       Part Description: 2019 Toyota Corolla oil filter
+
+Invoices sorted by price:
+Part Number: 33      Quantity: 8      Price: $4.99       Part Description: 2008 Ford F-150 spark plugs
+Part Number: 34      Quantity: 10     Price: $8.99       Part Description: 2019 Toyota Corolla oil filter
+Part Number: 30      Quantity: 3      Price: $12.99      Part Description: 2001 Honda Civic air filter
+Part Number: 27      Quantity: 2      Price: $30.00      Part Description: 1998 Jeep Wrangler headlight
+Part Number: 28      Quantity: 4      Price: $49.99      Part Description: 2010 Ford Ranger Tie Rod End
+Part Number: 29      Quantity: 4      Price: $54.99      Part Description: 2015 Toyota Camry brake pads
+Part Number: 36      Quantity: 2      Price: $129.99     Part Description: 2017 Chevrolet Malibu battery
+Part Number: 35      Quantity: 3      Price: $149.99     Part Description: 2003 Honda Accord alternator
+Part Number: 32      Quantity: 2      Price: $199.99     Part Description: 2012 Dodge Ram 1500 radiator
+Part Number: 31      Quantity: 1      Price: $289.99     Part Description: 2005 Chevrolet Silverado 1500 fuel pump
+
+Invoices mapped to description and quantity sorted by quantity:
+Quantity: 1      Part Description: 2005 Chevrolet Silverado 1500 fuel pump
+Quantity: 2      Part Description: 1998 Jeep Wrangler headlight
+Quantity: 2      Part Description: 2012 Dodge Ram 1500 radiator
+Quantity: 2      Part Description: 2017 Chevrolet Malibu battery
+Quantity: 3      Part Description: 2001 Honda Civic air filter
+Quantity: 3      Part Description: 2003 Honda Accord alternator
+Quantity: 4      Part Description: 2010 Ford Ranger Tie Rod End
+Quantity: 4      Part Description: 2015 Toyota Camry brake pads
+Quantity: 8      Part Description: 2008 Ford F-150 spark plugs
+Quantity: 10     Part Description: 2019 Toyota Corolla oil filter
+
+Invoices mapped to description and the invoice value sorted by the invoice value:
+Invoice Value: $38.97      Part Description: 2001 Honda Civic air filter
+Invoice Value: $39.92      Part Description: 2008 Ford F-150 spark plugs
+Invoice Value: $60.00      Part Description: 1998 Jeep Wrangler headlight
+Invoice Value: $89.90      Part Description: 2019 Toyota Corolla oil filter
+Invoice Value: $199.96     Part Description: 2010 Ford Ranger Tie Rod End
+Invoice Value: $219.96     Part Description: 2015 Toyota Camry brake pads
+Invoice Value: $259.98     Part Description: 2017 Chevrolet Malibu battery
+Invoice Value: $289.99     Part Description: 2005 Chevrolet Silverado 1500 fuel pump
+Invoice Value: $399.98     Part Description: 2012 Dodge Ram 1500 radiator
+Invoice Value: $449.97     Part Description: 2003 Honda Accord alternator
+
+Invoices mapped to description and the invoice value, sorted by the invoice value, and from $200 and $500:
+Invoice Value: $219.96     Part Description: 2015 Toyota Camry brake pads
+Invoice Value: $259.98     Part Description: 2017 Chevrolet Malibu battery
+Invoice Value: $289.99     Part Description: 2005 Chevrolet Silverado 1500 fuel pump
+Invoice Value: $399.98     Part Description: 2012 Dodge Ram 1500 radiator
+Invoice Value: $449.97     Part Description: 2003 Honda Accord alternator

@@ -72,7 +72,7 @@ public class Main {
         // Map the invoices to part description and invoice value, sort by invoice,
         // filter from $200 to $500, and print them.
         System.out.println(
-                "\nInvoices mapped to description and the invoice value, sorted by the invoice value, and between $200 and $500:");
+                "\nInvoices mapped to description and the invoice value, sorted by the invoice value, and from $200 and $500:");
         invoicesList.stream()
                 .map(invoice -> new Object() { // Map to a new objects with description and invoice value.
                     String description = invoice.getPartDescription();
