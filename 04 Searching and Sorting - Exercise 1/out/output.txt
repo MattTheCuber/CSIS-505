@@ -1,0 +1,41 @@
+[15, 21, 30, 31, 34, 38, 39, 41, 48, 57, 71, 85, 88, 88, 90]
+
+Please enter an integer value (-1 to quit): 41
+15 21 30 31 34 38 39 41 48 57 71 85 88 88 90 
+                      *
+41 was found in position 7
+
+Please enter an integer value (-1 to quit): 15
+15 21 30 31 34 38 39 41 48 57 71 85 88 88 90 
+                      *
+15 21 30 31 34 38 39
+          *
+15 21 30
+    *
+15
+ *
+15 was found in position 0
+
+Please enter an integer value (-1 to quit): 90
+15 21 30 31 34 38 39 41 48 57 71 85 88 88 90
+                      *
+                        48 57 71 85 88 88 90
+                                  *
+                                    88 88 90
+                                        *
+                                          90
+                                           *
+90 was found in position 14
+
+Please enter an integer value (-1 to quit): 48
+15 21 30 31 34 38 39 41 48 57 71 85 88 88 90
+                      *
+                        48 57 71 85 88 88 90
+                                  *
+                        48 57 71
+                            *
+                        48
+                         *
+48 was found in position 8
+
+Please enter an integer value (-1 to quit): -1

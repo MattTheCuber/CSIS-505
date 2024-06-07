@@ -13,7 +13,7 @@ import java.util.function.Consumer;
  */
 public class Evaluator {
     // Size of the arrays for sorting
-    private static int arraySize = 100000;
+    private static int arraySize = 1000;
 
     /**
      * Main method to evaluate the performance of selection sort, insertion sort,

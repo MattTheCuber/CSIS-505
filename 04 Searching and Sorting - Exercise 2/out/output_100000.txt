@@ -1,0 +1,13 @@
+Results for sorting 100000 elements in an array.
+
+| Sort Method    | Sequential (ms) | Random (ms)  | Descending (ms) |
+|----------------|-----------------|--------------|-----------------|
+| Selection Sort | 1089.5114       | 4552.6092    | 3162.4308       |
+| Insertion Sort | 2.7344          | 979.3400     | 2144.4694       |
+| Merge Sort     | 39.8907         | 30.6438      | 24.8216         |
+
+| Sort Method    | Best (ms)       | Average (ms) | Worst (ms)      |
+|----------------|-----------------|--------------|-----------------|
+| Selection Sort | 1089.5114       | 2934.8505    | 4552.6092       |
+| Insertion Sort | 2.7344          | 1042.1813    | 2144.4694       |
+| Merge Sort     | 24.8216         | 31.7854      | 39.8907         |
