@@ -5,8 +5,17 @@
 
 import java.util.Scanner;
 
+/**
+ * Main class to demonstrate searching a linked list using generics.
+ */
 public class Main {
+    /**
+     * Main method to demonstrate searching a linked list using generics.
+     * 
+     * @param args Unused command-line arguments.
+     */
     public static void main(String[] args) {
+        // Create a linked list of integers.
         List<Integer> list = new List<>();
         list.insertAtFront(1);
         list.insertAtFront(2);
@@ -34,13 +43,15 @@ public class Main {
         list.insertAtFront(24);
         list.insertAtFront(25);
 
+        // Initialize a scanner to read user input.
         Scanner scanner = new Scanner(System.in);
-        String input;
+        
+        // Prompt the user to enter a number to search in the list.
+        System.out.print("Enter a number to search in the list (or press enter to exit): ");
+        String input = scanner.nextLine();
 
-        do {
-            System.out.print("Enter a number to search in the list (or press enter to exit): ");
-            input = scanner.nextLine();
-
+        while (!input.isEmpty()) { // While there is input.
+            // Parse the input as an integer or print an error message and prompt for new input.
             int number;
             try {
                 number = Integer.parseInt(input);
@@ -48,13 +59,20 @@ public class Main {
                 System.out.println("Invalid input. Please enter a number.");
                 continue;
             }
+
+            // Search the list for the number and print whether it was found.
             if (list.searchVine(number) != null) {
                 System.out.println(number + " is found in the list.");
             } else {
                 System.out.println(number + " is not found in the list.");
             }
-        } while (!input.isEmpty());
+        
+            // Prompt the user to enter a number to search in the list.
+            System.out.print("Enter a number to search in the list (or press enter to exit): ");
+            input = scanner.nextLine();
+        }
 
+        // Close the scanner.
         scanner.close();
     }
 }
