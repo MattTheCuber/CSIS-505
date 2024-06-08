@@ -1,3 +1,8 @@
+// Generic Collections, Lambdas, and Streams - Exercise 2
+// Matthew Vine
+// CSIS 505-B01 (Liberty University)
+// June 28, 2024
+
 // Fig. 21.3: List.java
 // ListNode and List class declarations.
 // package com.deitel.datastructures;
@@ -136,17 +141,36 @@ public class List<E> {
         System.out.println();
     }
 
+    /* CODE ADDED BY MATTHEW VINE */
+    /**
+     * Searches the list for the specified key.
+     * 
+     * @param key The key to search for.
+     * @return The key if found, otherwise null.
+     */
     public E searchVine(E key) {
+        // Call the recursive search method.
         return searchVine(firstNode, key);
     }
 
+    /**
+     * Recursive method to search the list for the specified key.
+     * 
+     * @param node The current node to search in.
+     * @param key  The key to search for.
+     * @return The key if found, otherwise null.
+     */
     private E searchVine(ListNode<E> node, E key) {
         if (node == null) {
+            // If the node is null, return null.
             return null;
         } else if (node.data.equals(key)) {
+            // If the node's data equals the key, return the data.
             return node.data;
         } else {
+            // Otherwise, recursively search the next node.
             return searchVine(node.nextNode, key);
         }
     }
+    /* END OF ADDED CODE */
 }
