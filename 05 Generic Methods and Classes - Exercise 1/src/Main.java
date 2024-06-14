@@ -22,6 +22,10 @@ public class Main {
         Integer i2 = 1;
         Integer i3 = 2;
 
+        Integer three = 3;
+        Integer four = 4;
+        Integer five = 5;
+
         Double d1 = 1.0;
         Double d2 = 1.0;
         Double d3 = 2.0;
@@ -46,6 +50,9 @@ public class Main {
         System.out.println("Comparing Integer to itself: " + compareVine(i1, i1));
         System.out.println("Comparing equal Integers: " + compareVine(i1, i2));
         System.out.println("Comparing different Integers: " + compareVine(i1, i3));
+        System.out.println();
+        System.out.println("Comparing 4 and 4 Integers: " + compareVine(four, four));
+        System.out.println("Comparing 3 and 5 Integers: " + compareVine(three, five));
         System.out.println();
         System.out.println("Comparing Double to itself: " + compareVine(d1, d1));
         System.out.println("Comparing equal Doubles: " + compareVine(d1, d2));

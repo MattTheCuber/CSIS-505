@@ -1,0 +1,38 @@
+Comparing Boolean to itself: true
+Comparing equal Booleans: true
+Comparing different Booleans: false
+
+Comparing Integer to itself: true
+Comparing equal Integers: true
+Comparing different Integers: false
+
+Comparing 4 and 4 Integers: true
+Comparing 3 and 5 Integers: false
+
+Comparing Double to itself: true
+Comparing equal Doubles: true
+Comparing different Doubles: false
+
+Comparing equal Integer and Double: false
+Comparing different Integer and Double: false
+
+Comparing Character to itself: true
+Comparing equal Characters: true
+Comparing different Characters: false
+
+Comparing String to itself: true
+Comparing equal Strings: true
+Comparing different Strings: false
+
+Comparing equal Character and String: false
+Comparing different Character and String: false
+
+Comparing Object: true
+Comparing different Objects: false
+
+Comparing with Object: false
+Comparing nulls: true
+
+Comparing Boolean with Integer: false
+Comparing Integer with String: false
+Comparing String with Object: false

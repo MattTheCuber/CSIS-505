@@ -15,22 +15,24 @@ public class Main {
      * @param args Unused command-line arguments.
      */
     public static void main(String[] args) {
-        // Create a list of pairs from 1 to 10 by instantiating the generic `Pair` class
-        // with `Integer` and `String` types.
-        ArrayList<Pair<Integer, String>> list = new ArrayList<>();
-        list.add(new Pair<>(1, "One"));
-        list.add(new Pair<>(2, "Two"));
-        list.add(new Pair<>(3, "Three"));
-        list.add(new Pair<>(4, "Four"));
-        list.add(new Pair<>(5, "Five"));
-        list.add(new Pair<>(6, "Six"));
-        list.add(new Pair<>(7, "Seven"));
-        list.add(new Pair<>(8, "Eight"));
-        list.add(new Pair<>(9, "Nine"));
-        list.add(new Pair<>(10, "Ten"));
+        // Create a list of pairs of adjacent months by instantiating the generic `Pair`
+        // class with `String` and `String` types.
+        ArrayList<Pair<String, String>> adjacentMonths = new ArrayList<>();
+        adjacentMonths.add(new Pair<>("January", "February"));
+        adjacentMonths.add(new Pair<>("February", "March"));
+        adjacentMonths.add(new Pair<>("March", "April"));
+        adjacentMonths.add(new Pair<>("April", "May"));
+        adjacentMonths.add(new Pair<>("May", "June"));
+        adjacentMonths.add(new Pair<>("June", "July"));
+        adjacentMonths.add(new Pair<>("July", "August"));
+        adjacentMonths.add(new Pair<>("August", "September"));
+        adjacentMonths.add(new Pair<>("September", "October"));
+        adjacentMonths.add(new Pair<>("October", "November"));
+        // Removed to keep within the 10 list count requirement.
+        // adjacentMonths.add(new Pair<>("November", "December"));
 
         // Print the list of pairs.
-        for (Pair<Integer, String> pair : list) {
+        for (Pair<String, String> pair : adjacentMonths) {
             System.out.println(pair.toString());
         }
     }
