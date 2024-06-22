@@ -1,14 +1,19 @@
 {
   "java.project.sourcePaths": [
     "misc",
-    "06 Accessing Databases - Exercise 2/src",
-    "06 Accessing Databases - Exercise 1/src",
-    "05 Generic Methods and Classes - Exercise 2/src",
-    "05 Generic Methods and Classes - Exercise 1/src",
-    "04 Searching and Sorting - Exercise 2/src",
-    "03 Generic Collections - Exercise 2/src",
-    "03 Generic Collections - Exercise 1/src",
     "01 Exception Handling - Exercise 1/src",
+    "01 Exception Handling - Exercise 2/src",
+    "02 Graphical User Interface - Exercise 1/src",
+    "02 Graphical User Interface - Exercise 2/src",
+    "03 Generic Collections - Exercise 1/src",
+    "03 Generic Collections - Exercise 2/src",
+    "04 Searching and Sorting - Exercise 1/src",
+    "04 Searching and Sorting - Exercise 2/src",
+    "05 Generic Methods and Classes - Exercise 1/src",
+    "05 Generic Methods and Classes - Exercise 2/src",
+    "06 Accessing Databases - Exercise 1/src",
+    "06 Accessing Databases - Exercise 2/src",
+    "07 Generic Collections, Lambdas, and Streams - Exercise 1/src",
     "07 Generic Collections, Lambdas, and Streams - Exercise 2/src"
   ],
   "java.project.referencedLibraries": [

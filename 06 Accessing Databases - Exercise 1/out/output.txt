@@ -1,0 +1,44 @@
+Authors Table in the Books Database:
+AUTHORID        FIRSTNAME       LASTNAME  
+1               Paul            Deitel
+2               Harvey          Deitel
+3               Abbey           Deitel
+4               Dan             Quirk
+5               Michael         Morgano
+
+Paul Deitel's books:
+TITLE                                                           COPYRIGHT       ISBN      
+Visual C++ How to Program                                       2008            0136151574
+Android for Programmers: An App-Driven Approach                 2012            0132121360
+Internet & World Wide Web How to Program                        2012            0132151006
+Simply Visual Basic 2010                                        2013            0132990601
+C How to Program                                                2013            013299044X
+Android for Programmers: An App-Driven Approach, Volume 1       2014            0133570924
+C++ How to Program                                              2014            0133378713
+Visual C# 2012 How to Program                                   2014            0133379337
+Visual Basic 2012 How to Program                                2014            0133406954
+Android How to Program                                          2015            0133764036
+Java How to Program, Late Objects Version                       2015            0132575655
+Java How to Program                                             2015            0133807800
+
+Authors of "Android for Programmers: An App-Driven Approach":
+AUTHORID        FIRSTNAME       LASTNAME  
+3               Abbey           Deitel    
+2               Harvey          Deitel
+1               Paul            Deitel
+5               Michael         Morgano
+
+Books written in 2014:
+ISBN            TITLE                                                           EDITIONNUMBER   COPYRIGHT
+0133406954      Visual Basic 2012 How to Program                                6               2014
+0133379337      Visual C# 2012 How to Program                                   5               2014
+0133378713      C++ How to Program                                              9               2014
+0133570924      Android for Programmers: An App-Driven Approach, Volume 1       2               2014
+
+Number of books written by each author:
+AUTHORID        FIRSTNAME       LASTNAME        BOOKCOUNT
+2               Harvey          Deitel          12
+1               Paul            Deitel          12
+3               Abbey           Deitel          6
+5               Michael         Morgano         1
+4               Dan             Quirk           1
