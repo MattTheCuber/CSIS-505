@@ -17,31 +17,31 @@ public class Main {
     public static void main(String[] args) {
         // Create a linked list of integers.
         List<Integer> list = new List<>();
-        list.insertAtFront(1);
-        list.insertAtFront(2);
-        list.insertAtFront(3);
-        list.insertAtFront(4);
-        list.insertAtFront(5);
-        list.insertAtFront(6);
-        list.insertAtFront(7);
-        list.insertAtFront(8);
-        list.insertAtFront(9);
-        list.insertAtFront(10);
-        list.insertAtFront(11);
-        list.insertAtFront(12);
-        list.insertAtFront(13);
-        list.insertAtFront(14);
-        list.insertAtFront(15);
-        list.insertAtFront(16);
-        list.insertAtFront(17);
-        list.insertAtFront(18);
-        list.insertAtFront(19);
-        list.insertAtFront(20);
-        list.insertAtFront(21);
-        list.insertAtFront(22);
-        list.insertAtFront(23);
-        list.insertAtFront(24);
-        list.insertAtFront(25);
+        list.insertAtFront(2403);
+        list.insertAtFront(2404);
+        list.insertAtFront(2405);
+        list.insertAtFront(2406);
+        list.insertAtFront(2407);
+        list.insertAtFront(2408);
+        list.insertAtFront(2409);
+        list.insertAtFront(2410);
+        list.insertAtFront(2411);
+        list.insertAtFront(2412);
+        list.insertAtFront(2413);
+        list.insertAtFront(2414);
+        list.insertAtFront(2415);
+        list.insertAtFront(2416);
+        list.insertAtFront(2417);
+        list.insertAtFront(2418);
+        list.insertAtFront(2419);
+        list.insertAtFront(2420);
+        list.insertAtFront(2421);
+        list.insertAtFront(2422);
+        list.insertAtFront(2423);
+        list.insertAtFront(2424);
+        list.insertAtFront(2425);
+        list.insertAtFront(2426);
+        list.insertAtFront(2427);
 
         // Initialize a scanner to read user input.
         Scanner scanner = new Scanner(System.in);
@@ -57,6 +57,10 @@ public class Main {
                 number = Integer.parseInt(input);
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input. Please enter a number.");
+        
+                // Prompt the user to enter a number to search in the list.
+                System.out.print("Enter a number to search in the list (or press enter to exit): ");
+                input = scanner.nextLine();
                 continue;
             }
 

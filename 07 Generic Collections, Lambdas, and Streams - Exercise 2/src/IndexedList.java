@@ -36,6 +36,10 @@ public class IndexedList {
         // Later letters are have higher ASCII values.
         // For example, 'D' is 68 and 'A' is 65. So, 'D' should be at index 68 - 65 = 3.
         int characterIndex = Character.toUpperCase(c) - 'A';
+        // If the character is not a letter, return null.
+        if (characterIndex < 0 || characterIndex >= 26) {
+            return null;
+        }
         return indexedLists.get(characterIndex);
     }
 
@@ -79,6 +83,9 @@ public class IndexedList {
         }
         // Search for the name in the list indexed by the first letter of the name.
         List<String> list = getListByCharacter(name.charAt(0));
+        if (list == null) {
+            return null;
+        }
         return list.searchVine(name);
     }
 }

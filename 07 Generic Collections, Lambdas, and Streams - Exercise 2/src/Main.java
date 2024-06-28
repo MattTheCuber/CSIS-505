@@ -15,21 +15,22 @@ public class Main {
     public static void main(String[] args) {
         // Create an indexed list of names.
         IndexedList indexedList = new IndexedList();
-        indexedList.insert("Alice");
-        indexedList.insert("Bob");
-        indexedList.insert("Alex");
-        indexedList.insert("Brenda");
-        indexedList.insert("Chris");
-        indexedList.insert("Carol");
-        indexedList.insert("David");
-        indexedList.insert("Emily");
+        // Reversed year-month order as permitted via email.
+        indexedList.insert("April2024");
+        indexedList.insert("May2024");
+        indexedList.insert("June2024");
+        indexedList.insert("July2024");
+        indexedList.insert("August2024");
+        indexedList.insert("September2024");
+        indexedList.insert("October2024");
+        indexedList.insert("November2024");
 
         // Print the list.
         indexedList.print();
         System.out.println();
 
         // Create a list of search strings (test cases).
-        String[] searches = { "Alex", "Carol", "Emily", "Charles", "charles", "CHARLES", "C", "", null };
+        String[] searches = { "April2024", "May2024", "January2024", "April", "april2024", "APRIL2024", "2", "", null };
         // Search for each string in the list and print the result.
         for (String search : searches) {
             String result = indexedList.searchVine(search);

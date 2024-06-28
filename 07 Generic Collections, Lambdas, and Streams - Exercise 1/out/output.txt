@@ -1,0 +1,17 @@
+Enter a number to search in the list (or press enter to exit): 2404
+2404 is found in the list.
+Enter a number to search in the list (or press enter to exit): 2401
+2401 is not found in the list.
+Enter a number to search in the list (or press enter to exit): 1
+1 is not found in the list.
+Enter a number to search in the list (or press enter to exit): 0
+0 is not found in the list.
+Enter a number to search in the list (or press enter to exit): -1
+-1 is not found in the list.
+Enter a number to search in the list (or press enter to exit): -10000000
+-10000000 is not found in the list.
+Enter a number to search in the list (or press enter to exit): 10000000
+10000000 is not found in the list.
+Enter a number to search in the list (or press enter to exit): a
+Invalid input. Please enter a number.
+Enter a number to search in the list (or press enter to exit): 
